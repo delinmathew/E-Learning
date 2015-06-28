@@ -4,7 +4,6 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.app.Activity;
 import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
@@ -14,52 +13,52 @@ public class quiz1 extends ActionBarActivity {
     private static Button option21_text;
     private static Button option22_text;
     private static Button option23_text;
-    private static Button score1;
+    private static Button nav1;
+    public static int j;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz1);
 
-        option21_text = (Button) findViewById(R.id.option21);
+        option21_text = (Button) findViewById(R.id.ao11);
         option21_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(quiz1.this, "Correct", Toast.LENGTH_SHORT).show();
-                ++Quiz.i;
+                Toast.makeText(quiz1.this, "Richtig", Toast.LENGTH_SHORT).show();
+                ++j;
             }
 
 
         });
 
 
-        option22_text = (Button) findViewById(R.id.option22);
+        option22_text = (Button) findViewById(R.id.ao12);
         option22_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(quiz1.this, "Incorrect", Toast.LENGTH_SHORT).show();
+                Toast.makeText(quiz1.this, "Falsch", Toast.LENGTH_SHORT).show();
             }
 
         });
 
-        option23_text = (Button) findViewById(R.id.option23);
+        option23_text = (Button) findViewById(R.id.ao13);
         option23_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(quiz1.this, "Incorrect", Toast.LENGTH_SHORT).show();
+                Toast.makeText(quiz1.this, "Falsch", Toast.LENGTH_SHORT).show();
             }
 
         });
 
-        score1 = (Button) findViewById(R.id.score1);
-        score1.setOnClickListener(new View.OnClickListener() {
+        nav1=(Button)findViewById(R.id.anav1);
+        nav1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent in = new Intent("com.example.maliheh.plan.quiz2");
+                Intent in = new Intent("com.example.maliheh.plan.articlequestion22");
                 startActivity(in);
             }
-
         });
     }
 

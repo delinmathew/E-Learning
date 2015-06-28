@@ -20,11 +20,13 @@ public class quiz2 extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz2);
 
-        tscore1=(Button)findViewById(R.id.tscore);
+        tscore1=(Button)findViewById(R.id.end1);
         tscore1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(quiz2.this, "The total score is "+Quiz.i+" out of 2", Toast.LENGTH_SHORT).show();
+                Toast.makeText(quiz2.this, "The total score is "+Quiz.i+" out of 3", Toast.LENGTH_SHORT).show();
+                Intent in = new Intent("com.example.maliheh.plan.startquiz2");
+                startActivity(in);
             }
 
 

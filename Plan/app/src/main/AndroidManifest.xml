@@ -7,56 +7,58 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        <!--<activity-->
-            <!--android:name=".StartPage"-->
-            <!--android:label="@string/app_name" >-->
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
-        <!--</activity>-->
+
+        <!-- <activity -->
+        <!-- android:name=".StartPage" -->
+        <!-- android:label="@string/app_name" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
 
         <activity
             android:name=".Login"
             android:label="@string/title_activity_login" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".Register"
             android:label="@string/title_activity_register" >
             <intent-filter>
                 <action android:name="com.example.maliheh.plan.Register" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main" >
             <intent-filter>
-                <action android:name="com.example.maliheh.plan.MainActivity1" />
+                <action android:name="com.example.maliheh.plan.MainActivity" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MainActivity1"
             android:label="@string/title_activity_main_activity1" >
             <intent-filter>
                 <action android:name="com.example.maliheh.plan.MainActivity1" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".Article"
             android:label="@string/title_activity_article" >
             <intent-filter>
                 <action android:name="com.example.maliheh.plan.Article" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -65,6 +67,7 @@
             android:label="@string/title_activity_flashcards" >
             <intent-filter>
                 <action android:name="com.example.maliheh.plan.FlashCards" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -73,6 +76,7 @@
             android:label="@string/title_activity_picture_word_match" >
             <intent-filter>
                 <action android:name="com.example.maliheh.plan.PictureWordMatch" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -81,38 +85,7 @@
             android:label="@string/title_activity_questions_in_deutsch" >
             <intent-filter>
                 <action android:name="com.example.maliheh.plan.QuestionsInDeutsch" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".Quiz"
-            android:label="@string/title_activity_quiz" >
-            <intent-filter>
-                <action android:name="com.example.maliheh.plan.Quiz" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".quiz1"
-            android:label="@string/title_activity_quiz1" >
-            <intent-filter>
-                <action android:name="com.example.maliheh.plan.quiz1" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".quiz2"
-            android:label="@string/title_activity_quiz2" >
-            <intent-filter>
-                <action android:name="com.example.maliheh.plan.quiz2" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".startquiz1"
-            android:label="@string/title_activity_startquiz1" >
-            <intent-filter>
-                <action android:name="com.example.maliheh.plan.startquiz1" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -120,6 +93,228 @@
             android:name=".Vocabulary"
             android:label="@string/title_activity_vocabulary" >
         </activity>
+
+
+
+        <!-- QUIZ ********* QUIZ ********** QUIZ ********** QUIZ ********* QUIZ -->
+        <activity
+            android:name=".startquiz1"
+            android:label="@string/title_activity_startquiz1" >
+            <intent-filter>
+                <action android:name="com.example.maliheh.plan.startquiz1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Quiz"
+            android:label="@string/title_activity_quiz" >
+            <intent-filter>
+                <action android:name="com.example.maliheh.plan.Quiz" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".pwm12"
+            android:label="@string/title_activity_pwm12" >
+            <intent-filter>
+                <action android:name="com.example.maliheh.plan.pwm12" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".pwm13"
+            android:label="@string/title_activity_pwm13" >
+            <intent-filter>
+                <action android:name="com.example.maliheh.plan.pwm13" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".quiz2"
+            android:label="@string/title_activity_quiz2" >
+            <intent-filter>
+                <action android:name="com.example.maliheh.plan.quiz2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity
+            android:name=".startquiz2"
+            android:label="@string/title_activity_startquiz2" >
+            <intent-filter>
+                <action android:name="com.example.maliheh.plan.startquiz2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".quiz1"
+            android:label="@string/title_activity_quiz1" >
+            <intent-filter>
+                <action android:name="com.example.maliheh.plan.quiz1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".articlequestion22"
+            android:label="@string/title_activity_articlequestion22" >
+            <intent-filter>
+                <action android:name="com.example.maliheh.plan.articlequestion22" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".articlequestion23"
+            android:label="@string/title_activity_articlequestion23" >
+            <intent-filter>
+                <action android:name="com.example.maliheh.plan.articlequestion23" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".endquiz2"
+            android:label="@string/title_activity_endquiz2" >
+            <intent-filter>
+                <action android:name="com.example.maliheh.plan.endquiz2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity
+            android:name=".startquiz3"
+            android:label="@string/title_activity_startquiz3" >
+            <intent-filter>
+                <action android:name="com.example.maliheh.plan.startquiz3" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".sentencequestion31"
+            android:label="@string/title_activity_sentencequestion31" >
+            <intent-filter>
+                <action android:name="com.example.maliheh.plan.sentencequestion31" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".sentencequestion32"
+            android:label="@string/title_activity_sentencequestion32" >
+            <intent-filter>
+                <action android:name="com.example.maliheh.plan.sentencequestion32" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".sentencequestion33"
+            android:label="@string/title_activity_sentencequestion33" >
+            <intent-filter>
+                <action android:name="com.example.maliheh.plan.sentencequestion33" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".endquiz3"
+            android:label="@string/title_activity_endquiz3" >
+            <intent-filter>
+                <action android:name="com.example.maliheh.plan.endquiz3" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity
+            android:name=".startquiz4"
+            android:label="@string/title_activity_startquiz4" >
+            <intent-filter>
+                <action android:name="com.example.maliheh.plan.startquiz4" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".readingparagraph4"
+            android:label="@string/title_activity_readingparagraph4" >
+            <intent-filter>
+                <action android:name="com.example.maliheh.plan.readingparagraph4" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".readingquestion41"
+            android:label="@string/title_activity_readingquestion41" >
+            <intent-filter>
+                <action android:name="com.example.maliheh.plan.readingquestion41" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".readingquestion42"
+            android:label="@string/title_activity_readingquestion42" >
+            <intent-filter>
+                <action android:name="com.example.maliheh.plan.readingquestion42" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".readingquestion43"
+            android:label="@string/title_activity_readingquestion43" >
+            <intent-filter>
+                <action android:name="com.example.maliheh.plan.readingquestion43" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".end4"
+            android:label="@string/title_activity_end4" >
+            <intent-filter>
+                <action android:name="com.example.maliheh.plan.end4" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- QUIZ ********* QUIZ ********** QUIZ ********** QUIZ ********* QUIZ -->
+
 
     </application>
 

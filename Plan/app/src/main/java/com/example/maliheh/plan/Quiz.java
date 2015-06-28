@@ -4,13 +4,10 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.app.Activity;
 import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-
-import com.example.maliheh.plan.R;
 
 public class Quiz extends ActionBarActivity {
         private static Button option1_text;
@@ -22,33 +19,33 @@ public class Quiz extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
 
-        option1_text=(Button)findViewById(R.id.option1);
+        option1_text=(Button)findViewById(R.id.pwmo11);
         option1_text.setOnClickListener(new View.OnClickListener(){
                                             @Override
                                             public void onClick(View v){
-                                                Toast.makeText(Quiz.this,"Incorrect",Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(Quiz.this,"Falsch",Toast.LENGTH_SHORT).show();
                                             }
 
 
                                         });
 
 
-                option2_text=(Button)findViewById(R.id.option2);
+                option2_text=(Button)findViewById(R.id.pwmo12);
         option2_text.setOnClickListener(new View.OnClickListener(){
                                             @Override
                                             public void onClick(View v){
-                                                Toast.makeText(Quiz.this, "Correct",Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(Quiz.this, "Richtig",Toast.LENGTH_SHORT).show();
                                                 ++i;
                                             }
 
                                         });
 
-                nav1=(Button)findViewById(R.id.nav1);
+                nav1=(Button)findViewById(R.id.pwmnav1);
         nav1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
 
-                Intent in = new Intent ("com.example.maliheh.plan.quiz1");
+                Intent in = new Intent ("com.example.maliheh.plan.pwm12");
                 startActivity(in);
             }
         });
