@@ -1,15 +1,22 @@
 package com.example.maliheh.plan;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.maliheh.plan.R;
 
 
 public class Article extends ActionBarActivity {
 
+    private static Button button8;
+    public static int artikleCount=1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,4 +44,64 @@ public class Article extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void changeArtikle(View v){
+
+        if(artikleCount==1){
+
+            ImageView imageView=(ImageView)findViewById(R.id.imageView3);
+            imageView.setImageResource(R.drawable.nomdrindr);
+            artikleCount++;
+        }
+        else if(artikleCount==2){
+
+            ImageView imageView=(ImageView)findViewById(R.id.imageView3);
+            imageView.setImageResource(R.drawable.akk);
+            artikleCount++;
+        }
+        else if(artikleCount==3){
+
+            ImageView imageView=(ImageView)findViewById(R.id.imageView3);
+            imageView.setImageResource(R.drawable.dativ);
+            artikleCount++;
+        }
+        else if(artikleCount==4){
+
+            ImageView imageView=(ImageView)findViewById(R.id.imageView3);
+            imageView.setImageResource(R.drawable.derdiedas);
+            artikleCount++;
+        }
+        else if(artikleCount==5){
+
+            ImageView imageView=(ImageView)findViewById(R.id.imageView3);
+            imageView.setImageResource(R.drawable.nominativ);
+            artikleCount++;
+        }
+        else if(artikleCount==6){
+
+            ImageView imageView=(ImageView)findViewById(R.id.imageView3);
+            imageView.setImageResource(R.drawable.akkdativ);
+            artikleCount++;
+        }
+        else if(artikleCount==7){
+
+            ImageView imageView=(ImageView)findViewById(R.id.imageView3);
+            imageView.setImageResource(R.drawable.persprn);
+            artikleCount++;
+        }
+        else if(artikleCount==8){
+
+            ImageView imageView=(ImageView)findViewById(R.id.imageView3);
+            imageView.setImageResource(R.drawable.refpronomen);
+            artikleCount++;
+        }
+        else if(artikleCount==9){
+
+            Intent in = new Intent("com.example.maliheh.plan.startquiz2");
+            startActivity(in);
+        }
+
+    }
+
 }
+

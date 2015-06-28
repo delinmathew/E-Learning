@@ -11,7 +11,7 @@ import android.widget.Button;
 
 public class MainActivity1 extends ActionBarActivity {
 
-    private static Button button2;
+    private static Button button, button2, button3, button4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +23,34 @@ public class MainActivity1 extends ActionBarActivity {
             public void onClick(View v) {
 
                 Intent in = new Intent("com.example.maliheh.plan.PictureWordMatch");
+                startActivity(in);
+            }
+        });
+
+        button3 = (Button)findViewById(R.id.button2);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent in = new Intent("com.example.maliheh.plan.Article");
+                startActivity(in);
+            }
+        });
+        button = (Button)findViewById(R.id.button2);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent in = new Intent("com.example.maliheh.plan.QuestionsInDeutsch");
+                startActivity(in);
+            }
+        });
+        button4 = (Button)findViewById(R.id.button2);
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent in = new Intent("com.example.maliheh.plan.Vocabulary");
                 startActivity(in);
             }
         });

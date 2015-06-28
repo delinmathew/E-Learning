@@ -1,9 +1,11 @@
 package com.example.maliheh.plan;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.example.maliheh.plan.R;
 
@@ -36,5 +38,10 @@ public class Vocabulary extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void changeQuiz(View v){
+        Intent in = new Intent("com.example.maliheh.plan.startquiz4");
+        startActivity(in);
     }
 }

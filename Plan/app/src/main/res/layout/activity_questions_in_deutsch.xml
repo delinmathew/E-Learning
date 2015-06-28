@@ -26,9 +26,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Deutsch | English"
+        android:text="Wie heißen Sie?"
         android:textStyle="bold"
-        android:textSize="14pt"
+        android:textSize="16pt"
         android:background="@android:color/holo_blue_dark"
         android:id="@+id/textView2"
         android:layout_below="@+id/textView"
@@ -38,25 +38,24 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welche?"
+        android:text="What is your name?"
         android:textStyle="bold"
-        android:textSize="14pt"
+        android:textSize="16pt"
         android:background="@android:color/holo_blue_dark"
-        android:id="@+id/textView3"
-        android:layout_centerVertical="true"
-        android:layout_alignRight="@+id/textView2"
-        android:layout_alignEnd="@+id/textView2" />
-    <TextView
+        android:layout_below="@+id/textView2"
+        android:id="@+id/textView4"
+        android:layout_centerHorizontal="true"  />
+    <Button
+        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Which?"
-        android:textStyle="bold"
-        android:textSize="14pt"
-        android:background="@android:color/holo_blue_dark"
-        android:id="@+id/textView4"
-        android:layout_alignTop="@+id/textView3"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignStart="@+id/textView2" />
+        android:text="@string/nextpicture"
+        android:id="@+id/button1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:onClick="changeQuestion"
+        android:layout_alignParentEnd="true" />
 
 
 

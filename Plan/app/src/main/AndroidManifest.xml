@@ -92,6 +92,11 @@
         <activity
             android:name=".Vocabulary"
             android:label="@string/title_activity_vocabulary" >
+            <intent-filter>
+                <action android:name="com.example.maliheh.plan.Vocabulary" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
 
 
