@@ -1,5 +1,6 @@
 package com.example.maliheh.plan;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -39,13 +40,12 @@ public class Login extends ActionBarActivity implements View.OnClickListener{
 
             case R.id.bLogin:
 
-                startActivity(new Intent(this,MainActivity.class));
+                String username = etUserName.getText().toString();
+                String password = etPassword.getText().toString();
 
-                User user = new User(null,null);
+                User user = new User(username,password);
 
-
-                userLocalStore.storeUserData(user);
-                userLocalStore.setUserLoggedIn(true);
+                authenticate(user);
 
                 break;
 
@@ -54,4 +54,36 @@ public class Login extends ActionBarActivity implements View.OnClickListener{
                 break;
         }
     }
+
+    private void authenticate(User user){
+
+        ServerRequests serverRequests = new ServerRequests(this);
+        serverRequests.fetchUserDataAsyncTask(user, new GetUserCallBack() {
+            @Override
+            public void done(User returnedUser) {
+
+                if (returnedUser == null){
+                    showErrorMessage();
+                }else {
+                    logUserIn(returnedUser);
+                }
+            }
+        });
+    }
+    private void showErrorMessage(){
+        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(Login.this);
+        dialogBuilder.setMessage("Incorrect User Details");
+        dialogBuilder.setPositiveButton("Ok", null);
+        dialogBuilder.show();
+
+    }
+
+    private void logUserIn(User returnedUser){
+
+        userLocalStore.storeUserData(returnedUser);
+        userLocalStore.setUserLoggedIn(true);
+
+        startActivity(new Intent(this, MainActivity.class));
+    }
+
 }

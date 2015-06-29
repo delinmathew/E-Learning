@@ -38,15 +38,24 @@ public class Register extends ActionBarActivity implements View.OnClickListener{
                 String username = etUserName.getText().toString();
                 String password = etPassword.getText().toString();
 
-                User regiseredData = new User(name, username, password);
-
+                User user = new User(name, username, password);
+                registerUser(user);
                 break;
 
             case R.id.tvLoginLink:
-
-                startActivity(new Intent(this,Login.class));
-
                 break;
         }
+    }
+
+    private void registerUser(User user){
+        ServerRequests serverRequests = new ServerRequests(this);
+        serverRequests.storeUserDataInBackground(user, new GetUserCallBack() {
+            @Override
+            public void done(User returnedUser) {
+
+                startActivity(new Intent(Register.this, Login.class));
+
+            }
+        });
     }
 }

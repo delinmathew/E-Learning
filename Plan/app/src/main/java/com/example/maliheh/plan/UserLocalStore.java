@@ -41,6 +41,13 @@ public class UserLocalStore {
         spEditor.commit();
     }
 
+    public boolean getUserLoggedIn(){
+        if (userLocalDatabase.getBoolean("loggedIn",false)== true){
+            return true;
+        }else
+            return false;
+    }
+
     public void clearUserData(){
         SharedPreferences.Editor spEditor=userLocalDatabase.edit();
         spEditor.clear();
